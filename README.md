@@ -61,14 +61,12 @@ lr -r
 
 ```
 sudo kill <processId>
-sudo kill mongod
 ```
 
 ### Forcefully Terminate (SIGKILL)
 
 ```
 sudo kill -9 <processId>
-sudo kill mongod
 ```
 
 ### Make directories
@@ -123,10 +121,10 @@ netstat -a
 ### Services (daemons)
 
 ```
-sudo systemctl enable mongod
-sudo systemctl start mongod
-sudo service mongod start
-systemctl status mongod
+sudo systemctl enable [service]
+sudo systemctl start [service]
+sudo service [service] start
+systemctl status [service]
 ```
 
 ### List all environment variables
